@@ -1,0 +1,12 @@
+<h1><%= @employee.f_and_l %></h1>
+
+<ul>
+<li><strong>Title: </strong><%= @employee.title %></li><br>
+<li><strong>Alias: </strong><%= @employee.alias %></li><br>
+<li><strong>Office: </strong><%= @employee.office %></li><br>
+<li><strong>Dog: </strong><%= @employee.dog.name %></li><br>
+</ul>
+
+<img src="<%= @employee.img_url %>">
+
+<%= button_to "Delete Employee", employee_path(@employee), :method => :delete %>
